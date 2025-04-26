@@ -1,0 +1,103 @@
+/*
+    josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* Daha sezgisel kutu boyutlandırma
+margin ve padding ide boyutun içinden sayar */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+/* Margin sıfırlama */
+*{
+    margin: 0;
+}
+body{
+    /* Satır aralığı */
+    line-height: 1.5;
+    /* Yazı cilalama */
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg{
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select{
+    font: inherit;
+}
+/* Metin taşmalarını önlemek için */
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+/* Satır kaydırma iyileştirme */
+p{
+    text-wrap:balance;
+}
+/********************************************/
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(117, 119, 95);
+    box-shadow: 0 5px 10px black;
+    padding: 14px 0px;
+    height: 100px;
+    align-items: center;
+    color: #ffff;
+}
+.headerSag{
+    position: relative;
+    right: 30px; 
+}
+.headerSag a{
+    color: #ffff;
+}
+.headerSol{
+    position:relative;
+    left: 30px;
+    padding-right: 80px;
+}
+.container{
+    display: flex;
+    height:  100vh;
+}
+
+.kontrolPaneli{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: min(300px, 100%);
+    height: 100vmax;
+    padding-top: 12px;
+    padding-left:18px;
+    background-color: rgb(233, 233, 233);
+    margin-top: 12px;
+    font-size: 1.2rem;
+}
+.kontrolPaneli a{
+    position: relative;
+    padding-right: 15px;
+}
+.kontrolPaneli a:hover img{
+    display: inline;
+    animation: ok 1.5s linear infinite; 
+    
+}
+.kontrolPaneli img{
+    display: inline;
+    position: absolute;
+    bottom: -10px;
+    display: none;
+}
+@keyframes ok {
+    0%{transform: translate(0,0)}
+    50%{transform: translate(5px,0)}
+    100%{transform: translate(0,0)}
+}
+
+

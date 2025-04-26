@@ -1,0 +1,28 @@
+
+.containerIcerik{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,  1fr));
+    gap: 16px;
+    padding: 12px;
+    width: 100%;
+}
+.containerIcerik a{
+    position: relative;
+    color: #ffff;
+}
+.containerIcerik a:hover p{
+    background-color: rgba(37, 37, 37, 0.3);
+}
+
+.containerIcerik p{
+    position:absolute;
+    bottom:0px;
+    padding: 12px;
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.5);
+    font-size: 1.2rem;
+}
+.containerIcerik img{
+    height: 100%;
+    object-fit: cover;
+}
