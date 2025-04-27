@@ -1,7 +1,7 @@
 
 .containerIcerik{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,  1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     padding: 12px;
     width: 100%;
@@ -25,4 +25,17 @@
 .containerIcerik img{
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 615px){
+    .containerIcerik{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 4px;
+        padding: 4px;
+        padding-top: 8px;
+    }
+    .containerIcerik p{
+        font-size: 0.8rem;
+        padding: 4px;
+    }
 }
